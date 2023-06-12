@@ -17,6 +17,7 @@ import java.util.Arrays;
  * 會加載 META-INF/spring/%s.imports 檔案的類別
  * maven 的 spring-boot-starter 底層是 spring-boot-autoconfigure，這一包的 META-INF/spring/%s.imports，假設要看 tomcat，
  * EmbeddedWebServerFactoryCustomizerAutoConfiguration 裡就有相關的設定
+ * 假設在 maven 加了spring 的 redis 後，也會有 RedisAutoConfiguration，只要 spring 有的，就找 xxxAutoConfiguration
  * ----@AutoConfigurationPackage SpringBoot 啟動時會將啟動類別所在的包當作自動設定的包
  * <p>
  * @ConditionaOnXxx @ConditionalOnMissingXxx 如果[有|沒有]什麼才加載到 spring 容器
@@ -48,6 +49,10 @@ public class SpringBoot3TeachApplication {
         System.out.println(m.getId() + "=" + m.getName());
         WuKon wk = m.getWk();
         System.out.println(wk.getId() + "=" + wk.getName());
+
+//        wk.getDogMap().forEach((k, v) -> System.out.println(k + "=" + v.getName()));
+        System.out.println(wk.getLs().get(2));
+        System.out.println(wk.getLs().get(3));
     }
 
     private static void testDefaultValueWithEnableConfigurationProperties(ConfigurableApplicationContext context) {
