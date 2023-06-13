@@ -8,6 +8,7 @@ m:
     id: 222
     name: 孫悟空
     date-time: 2000/10/10 10:00:00
+    dateTime2: 2000-10-10T10:00:00.000000
     iArray: [ 111, 222 ]  # YAML 的陣列、list、set 有兩種寫法
     ls:
       - aaa

@@ -51,8 +51,8 @@ public class SpringBoot3TeachApplication {
         System.out.println(wk.getId() + "=" + wk.getName());
 
 //        wk.getDogMap().forEach((k, v) -> System.out.println(k + "=" + v.getName()));
-        System.out.println(wk.getLs().get(2));
-        System.out.println(wk.getLs().get(3));
+//        System.out.println(wk.getLs().get(2));
+//        System.out.println(wk.getLs().get(3));
     }
 
     private static void testDefaultValueWithEnableConfigurationProperties(ConfigurableApplicationContext context) {

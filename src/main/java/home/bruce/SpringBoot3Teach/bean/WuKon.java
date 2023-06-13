@@ -16,10 +16,11 @@ public class WuKon {
     private String name;
 
     private Date dateTime;
-//    private LocalDateTime date2;
+    private LocalDateTime dateTime2;
     private int[] iArray;
     private List<String> ls;
     private Set<String> set;
     private List<Dog> dogs;
     private Map<String, Dog> dogMap;
+
 }
